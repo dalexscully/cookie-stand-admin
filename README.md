@@ -1,3 +1,25 @@
+# LAB - Class 37
+
+## Project: Cookie Stand Admin
+
+## Author: Domaine Scully
+
+## Links and Resources
+
+- back-end server url (when applicable)
+
+- front-end application (when applicable)
+
+## Setup
+
+- .env requirements (where applicable)
+i.e.
+
+- PORT - Port Number
+- DATABASE_URL - URL to the running Postgres instance/db
+
+## How to initialize/run your application (where applicable)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
