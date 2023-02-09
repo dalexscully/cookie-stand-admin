@@ -1,9 +1,5 @@
-import React from 'react';
-
-function Footer() {
+export default function Footer() {
   return (
-    <footer className='fixed bottom-0 w-full bg-gray-500 text-gray-50 p-4'>&copy; 2022</footer>
+    <footer className='relative bottom-0 w-full bg-gray-400 text-gray-50 p-4'>8 Locations World Wide</footer>
   );
 }
-
-export default Footer;
