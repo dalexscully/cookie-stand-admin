@@ -1,24 +1,30 @@
-# LAB - Class 37
-
-## Project: Cookie Stand Admin
+# Cookie Stand Admin
 
 ## Author: Domaine Scully
 
-## Links and Resources
+## Collaborators
 
-- back-end server url (when applicable)
+Eric Kunuthia
 
-- front-end application (when applicable)
+## Links & Resources
 
-## Setup
+- []()
+- []()
 
-- .env requirements (where applicable)
-i.e.
+## Overview
 
-- PORT - Port Number
-- DATABASE_URL - URL to the running Postgres instance/db
+Create a cookie stand admin using nextjs and tailwind css.
 
-## How to initialize/run your application (where applicable)
+## Feature Tasks & Requirements
+
+## env file
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_RESOURCE_URL=http://localhost:8000/api/v1/cookie_stand/
+```
+
+## Notes
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
