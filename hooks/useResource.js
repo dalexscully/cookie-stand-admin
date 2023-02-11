@@ -1,6 +1,3 @@
-// code attributed to JB Tellez from class demo code
-
-import axios from 'axios';
 import useSWR from 'swr';
 
 export const apiUrl = process.env.NEXT_PUBLIC_RESOURCE_URL;
@@ -19,9 +16,11 @@ export default function useResource() {
         }
 
         try {
-            const response = await axios.get(url, config());
+            const response = await fetch(apiUrl, config());
 
-            return response.data;
+            const responseJSON = await response.json();
+
+            return responseJSON;
 
         } catch (err) {
             handleError(err);
@@ -31,7 +30,10 @@ export default function useResource() {
     async function createResource(info) {
 
         try {
-            await axios.post(apiUrl, info, config());
+            const options = config();
+            options.method = "POST",
+            options.body = JSON.stringify(info);
+            await fetch(apiUrl, options);
             mutate(); // mutate causes complete collection to be refetched
         } catch (err) {
             handleError(err);
@@ -42,7 +44,9 @@ export default function useResource() {
 
         try {
             const url = apiUrl + id;
-            await axios.delete(url, config());
+            const options = config();
+            options.method = "DELETE";
+            await fetch(url, options);
             mutate(); // mutate causes complete collection to be refetched
         } catch (err) {
             handleError(err);
@@ -60,7 +64,8 @@ export default function useResource() {
 
         return {
             headers: {
-                'Authorization': 'Bearer ' + tokens.access
+                'Authorization': 'Bearer ' + tokens.access,
+                'Content-Type': 'application/json',
             }
         };
     }
