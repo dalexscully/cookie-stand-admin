@@ -8,8 +8,8 @@ Eric Kunuthia
 
 ## Links & Resources
 
-- []()
-- []()
+- [FrontEnd Deployment](http://localhost:3000/)
+- [BackEnd server](http://localhost:8000/api/v1/cookie_stand/)
 
 ## Overview
 
