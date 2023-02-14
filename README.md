@@ -21,8 +21,8 @@ Create a cookie stand admin using nextjs and tailwind css.
 ## env file
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_RESOURCE_URL=http://localhost:8000/api/v1/cookie_stand/
+NEXT_PUBLIC_API_URL=https://cookie-stand-api-six.vercel.app
+NEXT_PUBLIC_RESOURCE_URL=https://cookie-stand-api-six.vercel.app//api/v1/cookie_stand/
 ```
 
 ## Notes
