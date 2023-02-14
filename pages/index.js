@@ -20,7 +20,7 @@ export default function Home() {
   // console.log(useResource())
 
   return (
-    <div className='bg-gray-100 h-screen w-screen'>
+    <div className='bg-gray-400 h-screen w-screen'>
       <Head />
       {user ?<CookieStandAdmin resources={resources} deleteResource={deleteResource} user={user} />:<LoginForm onLogin={login} />}</div>
   )
