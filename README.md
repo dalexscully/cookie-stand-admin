@@ -8,8 +8,9 @@ Eric Kunuthia
 
 ## Links & Resources
 
-- []()
-- []()
+- Frontend: [FrontEnd Server](https://cookie-stand-admin-murex-nu.vercel.app/)
+
+- Backend: [backend Server](https://cookie-stand-api-six.vercel.app/)
 
 ## Overview
 
